@@ -37,6 +37,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
   }
 }
 
+// The app service to deploy
 module appService 'modules/appService.bicep' = {
   name: 'appService'
   params: {
